@@ -6,7 +6,7 @@ databese with MySql
 * note: it's my first web application. for now, only login and logout works. under development
 
 
-# dependency and install
+# Requirements and install
 like any other php web application
 
 * php server or some other server, eg: apache
