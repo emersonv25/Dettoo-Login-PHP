@@ -1,0 +1,95 @@
+body{
+    font-family: 'Segoe UI';
+    background-color: #2c2541;
+    
+}
+
+.content{
+    background-color: #9147ff;
+    margin: 8%;
+    padding: 4rem 1rem 4rem 1rem;
+    border-radius: 10px;
+    border: 2px solid rgb(45,45,45);
+    color: #f2f2f3
+}
+
+.signin-text{
+    font-style: bold;
+    font-weight: 600px; 
+
+}
+.form-control{
+    display: block;
+    width: 100%;
+    border-color: #2c2541;
+    border-width: 0 0 1px 0;
+    padding: 0px;
+    height: auto;
+    border-radius: 0px;
+    background-color: #9147ff;
+    background-clip: padding-box;
+    color: #f2f2f3
+}
+
+.form-control::placeholder{
+    color: #2c2541;
+    
+}
+
+.form-control:focus{
+    background-color: #9147ff;
+    color: #f2f2f3;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-class{
+    border: 2px #2c2541;
+    border-radius: 20px;
+    padding: 20px 50px 20px;
+    background-color: #2c2541;
+    color: #f2f2f3;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-class:focus{
+    background-color: blueviolet;
+}
+.btn-class:hover{
+    background-color: #f2f2f3;
+}
+
+.btn-link{
+    display: block;
+    margin: 0 auto;
+    color: #f2f2f3;
+}
+
+.btn-link:hover{
+    color: #2c2541;
+}
+
+.form-check-label:hover{
+    color: #2c2541;
+}
+
+.img-avatar{
+    border-radius: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-fluid{
+    display: block;
+    margin-top: 25%;
+}
+
+.alert{
+    text-align: center;
+    
+}
+
+.bemvindo{
+    text-align: center;
+}
