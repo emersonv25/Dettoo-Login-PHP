@@ -6,6 +6,10 @@ databese with MySql
 * note: it's my first web application. for now, only login and logout works. under development
 
 
+# NOTES:
+* i'm writing all back end
+
+
 # Requirements and install
 like any other php web application
 
