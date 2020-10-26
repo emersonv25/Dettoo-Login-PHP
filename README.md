@@ -43,6 +43,15 @@ DEFAULT CHARACTER SET = utf8;
 
 * run
 
+# Functions worked
+
+* Logging
+* Sign Up
+
+# In Developer
+* User panel
+* recover access
+
 # author
 @emersonv25
  
