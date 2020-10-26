@@ -1,12 +1,12 @@
 <?php
-
+include('../config/config.php');
 
 Class User
 {
     private $pdo;
     public $msgErro = "";
 
-    public function connect($dbname = "mydb", $host = "localhost", $username = "root", $password = "")
+    public function connect($dbname = DB_NAME, $host = HOST, $username = DB_USER, $password = DB_PASSWORD)
     {
         global $pdo;
         try
