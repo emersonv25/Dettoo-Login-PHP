@@ -49,7 +49,7 @@
                 ?>
 
 
-                <form action="class/register.php" method="POST"> 
+                <form action="src/register.php" method="POST"> 
                     <div class="form-group"> 
                         <label for="name"> Nome</label>
                         <input type="text" name="name" placeholder="Digite seu nome completo" class="form-control" maxlength="45" require value="<?=$name?>">

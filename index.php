@@ -40,7 +40,7 @@
                 
             ?>
                 <h3 class="signin-text mb-3"> Login </h3>
-                <form action="class/login.php" method="POST"> 
+                <form action="src/login.php" method="POST"> 
 
                     <div class="form-group"> 
                         <label for="username"> Usuário</label>

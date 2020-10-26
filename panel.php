@@ -37,7 +37,7 @@
                 <img src="images/avatar.png" class="avatar">
                 <div class="w-100"></div>
                 <h1><?php echo $username;?></h1>
-                <a href="class/logout.php" class="btn btn-danger">Sair</a>
+                <a href="src/logout.php" class="btn btn-danger">Sair</a>
                 
             </div>
             
