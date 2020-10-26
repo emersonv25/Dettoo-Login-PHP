@@ -4,7 +4,8 @@ body{
     
 }
 
-.content{
+
+.row{
     background-color: #9147ff;
     margin: 8%;
     padding: 4rem 1rem 4rem 1rem;
@@ -13,34 +14,20 @@ body{
     color: #f2f2f3
 }
 
-.signin-text{
-    font-style: bold;
-    font-weight: 600px; 
-
+.col{
+    border-radius: 10px;
+    border: 2px solid rgb(45,45,45);
 }
-.form-control{
+
+
+.btn-link{
     display: block;
-    width: 100%;
-    border-color: #2c2541;
-    border-width: 0 0 1px 0;
-    padding: 0px;
-    height: auto;
-    border-radius: 0px;
-    background-color: #9147ff;
-    background-clip: padding-box;
-    color: #f2f2f3
-}
-
-.form-control::placeholder{
-    color: #2c2541;
-    
-}
-
-.form-control:focus{
-    background-color: #9147ff;
+    margin: 0 auto;
     color: #f2f2f3;
-    outline: 0;
-    box-shadow: none;
+}
+
+.btn-link:hover{
+    color: #2c2541;
 }
 
 .btn-class{
@@ -60,36 +47,23 @@ body{
     background-color: #f2f2f3;
 }
 
-.btn-link{
-    display: block;
-    margin: 0 auto;
-    color: #f2f2f3;
+.cancel{
+    background-color: gray;
 }
 
-.btn-link:hover{
-    color: #2c2541;
-}
-
-.form-check-label:hover{
-    color: #2c2541;
-}
-
-.img-avatar{
+.avatar{
     border-radius: 60px;
     display: block;
     margin: 0 auto;
-}
 
-.img-fluid{
-    display: block;
-    margin-top: 25%;
-}
-
-.alert{
-    text-align: center;
-    
 }
 
 .bemvindo{
     text-align: center;
+}
+
+.banner{
+    display: block;
+    margin-top: auto;
+    
 }
