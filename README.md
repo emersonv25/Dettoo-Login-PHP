@@ -30,7 +30,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`usuario` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 ```
-* edit your mysql information in function connect() in class/users.php
+* edit your mysql information in config/config.cfg
+```
+    <?php
+    define('HOST', 'localhost');
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', '');
+    define('DB_NAME', 'mydb');
+    ?>
+  
+```
 
 * run
 
