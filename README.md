@@ -3,11 +3,7 @@ Web login system
 front-end created using html,css and bootstrap
 back-end created with php
 databese with MySql
-* note: it's my first web application. for now, only login and logout works. under development
-
-
-# NOTES:
-* i'm writing all back end
+* note: it's my first web application
 
 
 # Requirements and install
@@ -34,12 +30,9 @@ CREATE TABLE IF NOT EXISTS `mydb`.`usuario` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 ```
-* edit your mysql information in php/connect.php
+* edit your mysql information in function connect() in class/users.php
 
 * run
-
-# screenshots
-![alt text](https://github.com/emersonv25/Dettoo-Login/blob/main/images/ss.png?raw=true)
 
 # author
 @emersonv25
