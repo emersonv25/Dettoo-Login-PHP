@@ -45,12 +45,12 @@ DEFAULT CHARACTER SET = utf8;
 
 # Functions worked
 
-* Logging
+* Log in
 * Sign Up
+* Forgot password (by email, no verification code yet)
 
 # In Developer
 * User panel
-* recover access
 
 # author
 @emersonv25
