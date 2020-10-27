@@ -16,11 +16,13 @@ if(isset($_POST['username']))
             
             if($u->login($username,$password)){
             header("location: ../panel.php");
+            
             }
 
             else{
                 $msg = "Usuário ou senha invalido";
                 header("location: ../index.php?erro=$msg&username=$username");
+                
             }
 
 
@@ -28,12 +30,14 @@ if(isset($_POST['username']))
         else{
             $msg = $msgErro;
             header("location: ../index.php?erro=$msg&username=$username");
+            
         }            
     }
 
     else{
         $msg = "Usuário ou senha em branco";
         header("location: ../index.php?erro=$msg");
+        
         
     }
 }

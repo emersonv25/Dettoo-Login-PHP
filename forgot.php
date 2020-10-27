@@ -20,15 +20,25 @@
             </div>
 
             <div class="col-md">
+                <?php
+                if(isset($_GET['erro'])){
+                    echo '<div class="alert alert-danger" role="alert">'. htmlspecialchars($_GET["erro"]) .'</div>';
+                }
+                if(isset($_GET['sucess'])){
+                    echo '<div class="alert alert-success" role="alert">'. htmlspecialchars($_GET["sucess"]) .'</div>';
+                }
+                
+            ?>
+
                 <h3 class="signin-text mb-3"> Recuperar </h3>
-                <form action="php/login.php" method="POST"> 
+                <form action="src/forgot.php" method="POST"> 
 
                     <div class="form-group"> 
                         <label for="email"> E-mail</label>
                         <input type="text" name="email" placeholder="Digite seu E-mail" class="form-control" maxlength="45" require>
                     </div>
                     <button type="submit" class="btn btn-class">Recuperar</button>   
-                    <a href="index.php" class="btn btn-light">Cancelar</a>
+                    <a href="index.php" class="btn btn-link">Cancelar</a>
 
                 </form>
                 

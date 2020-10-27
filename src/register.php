@@ -21,8 +21,8 @@ if(isset($_POST['username']))
                 if($password == $cPassword){
 
                     if($u->register($name,$username,$password,$email)){
-                        $msg = "Cadastrado com sucesso";
-                        header("location: ../register.php?sucess=$msg");
+                        $msg = "Cadastrado com sucesso!";
+                        header("location: ../index.php?sucess=$msg&username=$username");
                         
                         
                     }

@@ -24,7 +24,8 @@
 
             <div class="col-md">
             <?php
-                
+
+
                 if(isset($_GET['erro'])){
                     echo '<div class="alert alert-danger" role="alert">'. htmlspecialchars($_GET["erro"]) .'</div>';
                 }
@@ -58,7 +59,7 @@
 
                 </form>
                 
-                <a href="forgout.php" class="btn btn-link"> Esqueceu sua senha ?</a>
+                <a href="forgot.php" class="btn btn-link"> Esqueceu sua senha ?</a>
                 <a href="register.php" class="btn btn-link"> Não é um membro ? <strong>Cadastre-se</strong></a>
                 
             </div>
