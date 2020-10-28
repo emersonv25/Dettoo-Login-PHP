@@ -1,16 +1,8 @@
 # Dettoo-Login-with-PHP-MySql
-Web login system
-front-end created using html,css and bootstrap
-back-end created with php
-databese with MySql
+A complete login system with registration, forgot password and user panel.
+
 * note: it's my first web application
 
-
-# Requirements and install
-like any other php web application
-
-* php server or some other server, eg: apache
-* install in your server and run
 
 # Databese install
 * run query in your mysql server
@@ -40,8 +32,6 @@ DEFAULT CHARACTER SET = utf8;
     ?>
   
 ```
-
-* run
 
 # Functions worked
 
