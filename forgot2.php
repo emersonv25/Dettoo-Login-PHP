@@ -1,12 +1,13 @@
 <?php 
 
     session_start();
-    if(!isset($_SESSION['user_forgot'])){
+    if(!isset($_SESSION['id_forgot'])){
         header("location: index.php");
         session_destroy();
         exit;
     }
     $username = $_SESSION['user_forgot'];
+
 
 ?>
 
@@ -42,16 +43,16 @@
                     }
                 
                 ?>  
-                <form action="src/newPassword.php" method="POST"> 
+                <form action="src/new_password.php" method="POST"> 
                     <h3><?php echo "Olá, ", $username;?></h3>
                     <h3>Digite sua nova senha</h3>
                     <div class="form-group"> 
                         <label for="newPassword"> Nova senha: </label>
-                        <input type="password" name="newPassword" placeholder="Digite sua nova senha" class="form-control" maxlength="45" require>
+                        <input type="password" name="newPassword" placeholder="Digite sua nova senha" class="form-control" maxlength="45" minlength="6" require>
                     </div>
                     <div class="form-group"> 
                         <label for="newPassword"> Confirmar nova senha: </label>
-                        <input type="password" name="cPassword" placeholder="Digite sua nova senha" class="form-control" maxlength="45" require>
+                        <input type="password" name="cPassword" placeholder="Digite sua nova senha" class="form-control" maxlength="45" minlength="6" require>
                     </div>
                     <button type="submit" class="btn btn-class">Recuperar</button>   
                     <a href="src/logout.php" class="btn btn-link">Cancelar</a>

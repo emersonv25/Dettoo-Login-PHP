@@ -60,11 +60,11 @@
                     </div>
                     <div class="form-group"> 
                         <label for="password"> Senha</label>
-                        <input type="password" name="password" placeholder="Digite uma senha" class="form-control" maxlength="45" require>   
+                        <input type="password" name="password" placeholder="Digite uma senha" class="form-control" maxlength="45" minlength="6" require>   
                     </div>
                     <div class="form-group"> 
                         <label for="password"> Confirmar Senha</label>
-                        <input type="password" name="cPassword" placeholder="Digite a senha novamente" class="form-control" maxlength="45" require>   
+                        <input type="password" name="cPassword" placeholder="Digite a senha novamente" class="form-control" maxlength="45" minlength="6" require>   
                     </div>
                     <div class="form-group"> 
                         <label for="email"> E-mail</label>

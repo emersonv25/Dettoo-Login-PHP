@@ -2,12 +2,12 @@
 
 require_once('users.php');
 session_start();
-$username = $_SESSION['user_forgot'];
+$id = $_SESSION['id_forgot'];
 $u = new User;
 $msg = "";
 
 
-if(isset($username))
+if(isset($id))
 {
     
     $newPassword = addslashes($_POST['newPassword']);
@@ -20,10 +20,10 @@ if(isset($username))
             if(strlen($newPassword) > 6){
                 if($newPassword == $cPassword){
 
-                    if($u->newPassword($username, $newPassword)){
+                    if($u->new_password($id, $newPassword)){
                         $msg = "Senha alterada com sucesso!";
                         session_destroy();
-                        header("location: ../index.php?sucess=$msg&username=$username");
+                        header("location: ../index.php?sucess=$msg");
                         exit;
                         
                     }

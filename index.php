@@ -49,7 +49,7 @@
                     </div>
                     <div class="form-group"> 
                         <label for="password"> Senha</label>
-                        <input type="password" name="password" placeholder="Digite sua senha" class="form-control" maxlength="45" require>   
+                        <input type="password" name="password" placeholder="Digite sua senha" class="form-control" maxlength="45" minlength="6" require>   
                     </div>
                     <div class="form-group form-check"> 
                         <input type="checkbox" name="checkbox" class="form-check-input" id="checkbox">

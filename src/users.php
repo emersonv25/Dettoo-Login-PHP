@@ -80,7 +80,7 @@ Class User
         
         global $pdo;
         // consulta o banco 
-        $sql = $pdo->prepare("SELECT usuario FROM usuario WHERE email = :e");
+        $sql = $pdo->prepare("SELECT id, usuario FROM usuario WHERE email = :e");
         $sql->bindValue(":e", $email);
         $sql->execute();
 
@@ -89,6 +89,7 @@ Class User
             $dado = $sql->fetch();
             session_start();
             $_SESSION['user_forgot'] = $dado['usuario'];
+            $_SESSION['id_forgot'] = $dado['id'];
             return true; // caso exista, retornara o nome do usuario
 
         }
@@ -99,18 +100,18 @@ Class User
     }
 
     // Altera a senha
-    public function newPassword($username, $newPassword){
+    public function new_password($id, $newPassword){
         global $pdo;
         //consulta o banco 
-        $sql = $pdo->prepare("SELECT id, usuario FROM usuario WHERE usuario = :u");
-        $sql->bindValue(":u", $username);
+        $sql = $pdo->prepare("SELECT id, usuario FROM usuario WHERE id = :i");
+        $sql->bindValue(":i", $id);
         $sql->execute();
 
         // Se existir um usuario com a id, alterará a senha
         if($sql-> rowCount() > 0){                
             //consulta o banco 
-            $sql2 = $pdo->prepare("UPDATE usuario SET senha = :p WHERE usuario = :u");
-            $sql2->bindValue(":u", $username);
+            $sql2 = $pdo->prepare("UPDATE usuario SET senha = :p WHERE id = :i");
+            $sql2->bindValue(":i", $id);
             $sql2 ->bindValue(":p", md5($newPassword));
             $sql2->execute();
             return true;
