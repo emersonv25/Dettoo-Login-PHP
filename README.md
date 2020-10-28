@@ -1,23 +1,28 @@
 # Dettoo-Login-with-PHP-MySql
-Web login system
-front-end created using html,css and bootstrap
-back-end created with php
-databese with MySql
-* note: it's my first web application
+* Dettoo-Login is a simple login system with registration, forgot password and user panel.
+* This is my first web application built with php and mysql, includes basic user management classes and methods.
 
 
-# Requirements and install
-like any other php web application
+# Technologies used
+* PHP 7
+* MySql or MariaDB
+* CSS and Bootstrap
 
-* php server or some other server, eg: apache
-* install in your server and run
+# Installation
+
+#### Clone the Repository
+	$ git clone https://github.com/emersonv25/Dettoo-Login-PHP.git
+
+#### Run through web-based installer
+Open this link in your web browser (replacing [yoursite.com] with your site address)
+
+    http://{yoursite.com}/install/index.php
+
 
 # Databese install
 * run query in your mysql server
 ```
--- -----------------------------------------------------
--- Table `mydb`.`usuario`
--- -----------------------------------------------------
+
 CREATE TABLE IF NOT EXISTS `mydb`.`usuario` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `usuario` VARCHAR(45) NOT NULL,
@@ -41,16 +46,14 @@ DEFAULT CHARACTER SET = utf8;
   
 ```
 
-* run
-
 # Functions worked
 
-* Logging
+* Log in
 * Sign Up
+* Forgot password (by email, no verification code yet)
 
 # In Developer
 * User panel
-* recover access
 
 # author
 @emersonv25
