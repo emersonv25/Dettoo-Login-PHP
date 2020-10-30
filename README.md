@@ -1,6 +1,7 @@
 # Dettoo-Login-with-PHP-MySql
 * Dettoo-Login is a simple login system with registration, forgot password and user panel.
 * This is my first web application built with php and mysql, includes basic user management classes and methods.
+* https://dettoo.000webhostapp.com/
 
 
 # Technologies used
@@ -50,7 +51,7 @@ DEFAULT CHARACTER SET = utf8;
 
 * Log in
 * Sign Up
-* Forgot password (by email, no verification code yet)
+* Forgot password (by email, without needing a verification code, for now)
 
 # In Developer
 * User panel
