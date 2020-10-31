@@ -36,7 +36,7 @@
 
                     <div class="form-group"> 
                         <label for="email"> E-mail</label>
-                        <input type="text" name="email" placeholder="Digite seu E-mail" class="form-control" maxlength="45" require>
+                        <input type="text" name="email" placeholder="Digite seu E-mail" class="form-control" maxlength="45" required>
                     </div>
                     <button type="submit" class="btn btn-class">Recuperar</button>   
                     <a href="index.php" class="btn btn-link">Cancelar</a>
