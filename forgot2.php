@@ -49,11 +49,11 @@
                     <h3>Digite sua nova senha</h3>
                     <div class="form-group"> 
                         <label for="newPassword"> Nova senha: </label>
-                        <input type="password" name="newPassword" placeholder="Digite sua nova senha" class="form-control" maxlength="45" minlength="6" require>
+                        <input type="password" name="newPassword" placeholder="Digite sua nova senha" class="form-control" maxlength="45" minlength="6" required>
                     </div>
                     <div class="form-group"> 
                         <label for="newPassword"> Confirmar nova senha: </label>
-                        <input type="password" name="cPassword" placeholder="Digite sua nova senha" class="form-control" maxlength="45" minlength="6" require>
+                        <input type="password" name="cPassword" placeholder="Digite sua nova senha" class="form-control" maxlength="45" minlength="6" required>
                     </div>
                     <button type="submit" class="btn btn-class">Recuperar</button>   
                     <a href="src/logout.php" class="btn btn-link">Cancelar</a>

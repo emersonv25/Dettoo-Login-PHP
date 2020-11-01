@@ -45,15 +45,11 @@
 
                     <div class="form-group"> 
                         <label for="username"> Usuário</label>
-                        <input type="text" name="username" placeholder="Digite seu usuário" class="form-control" maxlength="45" require value="<?=$username?>">
+                        <input type="text" name="username" placeholder="Digite seu usuário" class="form-control" maxlength="45" required value="<?=$username?>">
                     </div>
                     <div class="form-group"> 
                         <label for="password"> Senha</label>
-                        <input type="password" name="password" placeholder="Digite sua senha" class="form-control" maxlength="45" minlength="6" require>   
-                    </div>
-                    <div class="form-group form-check"> 
-                        <input type="checkbox" name="checkbox" class="form-check-input" id="checkbox">
-                        <label class="form-check-label" for="checkbox"> Lembrar-me</label>
+                        <input type="password" name="password" placeholder="Digite sua senha" class="form-control" maxlength="45" minlength="6" required>   
                     </div>
                     <button type="submit" class="btn btn-class">Entrar</button>   
 
@@ -69,6 +65,6 @@
         
     </div>
     
-
+    <script type="text/javascript" src="js/users.js"></script>
 </body>
 </html>

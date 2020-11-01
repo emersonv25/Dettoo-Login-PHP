@@ -53,7 +53,7 @@
                 <form action="src/register.php" method="POST"> 
                     <div class="form-group"> 
                         <label for="name"> Nome</label>
-                        <input type="text" name="name" placeholder="Digite seu nome completo" class="form-control" maxlength="45" require value="<?=$name?>">
+                        <input type="text" name="name" placeholder="Digite seu nome completo" class="form-control" maxlength="45" required value="<?=$name?>">
                     </div>
                     <div class="form-group"> 
                         <label for="username"> Usuário</label>
@@ -61,15 +61,15 @@
                     </div>
                     <div class="form-group"> 
                         <label for="password"> Senha</label>
-                        <input type="password" name="password" placeholder="Digite uma senha" class="form-control" maxlength="45" minlength="6" require>   
+                        <input type="password" name="password" placeholder="Digite uma senha" class="form-control" maxlength="45" minlength="6" required>   
                     </div>
                     <div class="form-group"> 
                         <label for="password"> Confirmar Senha</label>
-                        <input type="password" name="cPassword" placeholder="Digite a senha novamente" class="form-control" maxlength="45" minlength="6" require>   
+                        <input type="password" name="cPassword" placeholder="Digite a senha novamente" class="form-control" maxlength="45" minlength="6" required>   
                     </div>
                     <div class="form-group"> 
                         <label for="email"> E-mail</label>
-                        <input type="email" name="email" placeholder="Digite seu E-mail" class="form-control" maxlength="45" require value="<?=$email?>">   
+                        <input type="email" name="email" placeholder="Digite seu E-mail" class="form-control" maxlength="45" required value="<?=$email?>">   
                     </div>
                     <button type="submit" class="btn btn-class">Cadastrar</button>   
                     <a href="index.php" class="btn btn-link">Cancelar</a>

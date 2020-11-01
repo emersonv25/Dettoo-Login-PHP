@@ -17,7 +17,7 @@ if(isset($id))
         $u->connect();
         if($u->msgErro == ""){
             
-            if(strlen($newPassword) > 6){
+            if(strlen($newPassword) >= 6){
                 if($newPassword == $cPassword){
 
                     if($u->new_password($id, $newPassword)){
