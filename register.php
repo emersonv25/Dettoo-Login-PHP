@@ -57,7 +57,7 @@
                     </div>
                     <div class="form-group"> 
                         <label for="username"> Usuário</label>
-                        <input type="text" name="username" placeholder="Digite um usuário" class="form-control" maxlength="45" require value="<?=$username?>"> 
+                        <input type="text" name="username" placeholder="Digite um usuário" class="form-control" maxlength="45" required value="<?=$username?>"> 
                     </div>
                     <div class="form-group"> 
                         <label for="password"> Senha</label>
